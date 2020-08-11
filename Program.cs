@@ -7,7 +7,7 @@ namespace CodeBlogTasks
     {
         static void Main(string[] args)
         {
-            Task10(new int[] { 9, 3, 5, 7, 1 });
+            Task11(new int[] { 4, 3, 5, 7, 8 });
         }
 
         static void Task2(int a, int b)
@@ -95,6 +95,16 @@ namespace CodeBlogTasks
                 s = s + mas[i];
             }
             Console.WriteLine(s / mas.Length); //middle
+        }
+        static void Task11(int[] mas)
+        {
+            //Найти количество различных элементов в массиве целых чисел
+            Console.WriteLine(mas.Distinct().Count());
+        }
+        static void Task12(int[] mas)
+        {
+            //реверс одномерного массива целых чисел без использования дополнительного массива
+
         }
     }
 }
