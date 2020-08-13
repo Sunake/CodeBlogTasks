@@ -7,7 +7,7 @@ namespace CodeBlogTasks
     {
         static void Main(string[] args)
         {
-            Task11(new int[] { 4, 3, 5, 7, 8 });
+            Task12(new int[] { 4, 3, 5, 7, 8 });
         }
 
         static void Task2(int a, int b)
@@ -104,7 +104,17 @@ namespace CodeBlogTasks
         static void Task12(int[] mas)
         {
             //реверс одномерного массива целых чисел без использования дополнительного массива
+            for (int i = 0; i < mas.Length / 2; i++)
+            {
+                int tmp = mas[i];
+                mas[i] = mas[mas.Length - 1 - i];
+                mas[mas.Length - 1 - i] = tmp;
+            }
 
+            for (int i = 0; i < mas.Length; i++)
+            {
+                Console.WriteLine(mas[i]);
+            }
         }
     }
 }
